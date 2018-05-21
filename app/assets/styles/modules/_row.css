@@ -94,7 +94,18 @@
     padding-top: 80px;
   }
 
-  &--equal-height-at-large {
+  .flexbox &--equal-height-at-medium {
+    @mixin atMedium {
+      display: flex;
+    }
+
+    & > div {
+      float: none;
+      display: flex;
+    }
+  }
+
+  .flexbox &--equal-height-at-large {
     @mixin atLarge {
       display: flex;
     }
